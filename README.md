@@ -45,7 +45,7 @@ A sample successful response will be as follows. Http response code will be 200.
 }
 ```
 
-If an error happens, the code parameter will be an integer other than 0. The very same code parameter is being used as http response code. Please see a sample response as follows:
+If an error happens, the code parameter will be an integer other than 0. The very same code value is being used as http response code. Please see a sample response as follows:
 
 ```json
 {
