@@ -216,3 +216,17 @@ it("returns success with empty records if no record matches", async () => {
     expect(response.body.msg).toEqual("Success");
     expect(response.body.records).toEqual([]);
 });
+
+it("fails when an unsupported end point is queried", async () => {
+  const response = await request(app)
+    .post("/api/v1/keys/1")
+    .send({
+      startDate: "2017-02-02",
+      endDate: "2018-02-02",
+      minCount: 2700,
+      maxCount: 1000,
+    })
+  .expect(404);
+
+  expect(response.body.code).toEqual(404);
+});
