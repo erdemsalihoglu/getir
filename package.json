@@ -1,0 +1,32 @@
+{
+  "name": "getir",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "lint": "eslint src/**",
+    "test": "jest --watchAll"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./src/test/jest.setup.js"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-validator": "^6.12.1",
+    "mongoose": "^5.13.7"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.15.0",
+    "eslint": "^7.32.0",
+    "jest": "^27.0.6",
+    "mongodb-memory-server": "^7.3.6",
+    "supertest": "^6.1.5"
+  },
+  "type": "module"
+}
