@@ -72,7 +72,7 @@ Install node modules
 npm install
 ```
 
-Start the server. 
+Start the server. It listens at port 3000.
 
 ```bash
 npm start
@@ -83,7 +83,7 @@ npm start
 Using linter
 
 ```bash
-npm run start
+npm run lint
 ```
 
 Testing unit/integration tests
