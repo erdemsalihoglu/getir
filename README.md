@@ -24,7 +24,7 @@ curl -X POST \
   -d '{"startDate": "2016-01-26",  "endDate": "2018-02-02",  "minCount": 2700,  "maxCount": 3000  }'
 ```
 
-A sample successful response will be as follows:
+A sample successful response will be as follows. Http response code will be 200.
 
 ```json
 {
@@ -45,7 +45,7 @@ A sample successful response will be as follows:
 }
 ```
 
-If an error happens, the code parameter will be an integer other than 0. Please see a sample response as follows:
+If an error happens, the code parameter will be an integer other than 0. The very same code parameter is being used as http response code. Please see a sample response as follows:
 
 ```json
 {
@@ -55,9 +55,9 @@ If an error happens, the code parameter will be an integer other than 0. Please 
 ```
 
 List of currently supported response codes with explanations
-400: Bad request. E.g., request parameters are invalid. See msg for error details.
-404: An unsupported resource is queried.
-500: Internal error. E.g., unexpected error from database.
+- 400: Bad request. E.g., request parameters are invalid. See msg for error details.
+- 404: An unsupported resource is queried.
+- 500: Internal error. E.g., unexpected error from database.
 
 ## Getting Started
 
